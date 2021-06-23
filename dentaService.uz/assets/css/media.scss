@@ -1,0 +1,792 @@
+/* *******DESKTOP LARGE SCREEN SIZE******** */
+@media screen and (min-width: 993px) {
+    .desktop_header {
+        width: 100%;
+    }
+
+    .mobile_header {
+        display: none;
+    }
+}
+
+/* *******TABLET LARGE SCREEN SIZE******** */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .clickUp {
+        right: 20px !important;
+    }
+    .desktop_header {
+        display: none;
+    }
+    .mobile_header {
+        width: 95%;
+    }
+
+    // start home_page *****************************
+    .home_page {
+        .right_choice {
+            margin-top: 100px;
+            .right {
+                h2 {
+                    font-size: 24px !important;
+                }
+            }
+            .circle {
+                top: -100px !important;
+            }
+            .photo {
+                width: 120%;
+        }
+    }
+    
+    .recommended { 
+        margin-top: 100px;
+        .recommended_list {
+            height: 250px !important;
+        }
+    } 
+    
+    .our_specialists {
+        margin-top: 100px !important;
+        .specialist_list {
+            margin-bottom: 25px;
+        }
+    }
+    
+    .our_clients {
+        .slider_list {
+            .comment_box {
+                width: 300px !important;
+            }
+        }
+        .btn_left,
+                .btn_right {
+                    top: 60% !important;
+                }
+    }
+    }
+    // End home_page    **********************
+
+    // start abousUs_pafe
+    .aboutUs_page {
+
+mobile_scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+mobile_scroll::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 2px;
+}
+        .about_us,
+        .for_customers {
+            height: 370px;
+                .right {
+                    .mobile_scroll {
+                        max-height: 250px;
+                        overflow-y: scroll;
+                    }
+                }
+
+                .left {
+                    img {
+                        width: 400px;
+                        top: -12%;
+                    }
+                }
+        }
+
+        .certificate {
+            img {
+                margin-bottom: 20px !important;
+            }
+        }
+
+        .modal_certificate {
+            .close_modal {
+                top: 25%;
+                left: 97%;
+            }
+        }
+
+        .cheerful_team {
+            .fade_list {
+                width: 100%;
+
+                img {
+                    width: 90%;
+                }
+            }
+            
+    .slick-next {
+        right: 2%;
+    }
+    .slick-prev {
+        left: 0;
+    }
+        }
+    }   
+
+        // Start contact_page
+        .contact_page {
+            form {
+                width: 100% !important;
+                margin: 0 auto;
+                text-align: center;
+
+                .user_photo {
+                    label {
+                            font-size: 14px;                    
+                            margin-bottom: 5px;
+                    }
+                    small {
+                        bottom: -10px;
+                    }
+                }
+                .add_photo {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+
+                    img,
+                    input {
+                        width: 94px;
+                        height: 94px;
+                        border-radius: 50%;
+                        position: absolute;
+                        border-radius: 50%;
+                    }
+                    .fa-user {
+                        font-size: 50px;
+                    }
+                    .fa-check-circle,
+                    .fa-exclamation-circle {
+                        position: absolute;
+                        right: -40px;
+                        font-size: 25px;
+                        display: none;
+                    }
+                }
+
+                .user_name,
+                .subject_title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    label {
+                        font-size: 14px;
+
+                        input {
+                            width: 350px !important;
+                            height: 50px;
+                            border: none;
+                            outline: none;
+                            background-color: #f6f6f6;
+                            border-radius: 5px;
+                            padding: 0 10px;
+                            font-size: 16px;
+                            border: 2px solid #f6f6f6;
+                        }
+                        #userName,
+                        #subject {
+                            text-transform: capitalize;
+                        }
+                        .fa-check-circle,
+                        .fa-exclamation-circle {
+                            position: absolute;
+                            right: 5px;
+                            top: 32px;
+                            font-size: 25px;
+                            display: none;
+                        }
+                        .fa-exclamation-circle {
+                            color: red;
+                        }
+                    }
+                }
+                    #subject {
+                        width: 740px !important;
+                    }
+                    .user_name {
+                        margin: 25px 0;
+                    }
+
+                    .user_message {
+                        margin-top: 25px;
+                        label {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            font-size: 14px;
+                            position: relative;
+                            
+                            textarea {
+                                width: 740px !important;
+                                height: 120px;
+                                background-color: #f6f6f6;
+                                border: 2px solid #f6f6f6;
+                                outline: none;
+                                border: 2px solid #f6f6f6;
+                                border-radius: 5px;
+                                resize: none;
+                                padding: 10px;
+                            }
+                            
+                        .fa-check-circle,
+                        .fa-exclamation-circle {
+                            position: absolute;
+                            right: 5px;
+                            top: 32px;
+                            font-size: 25px;
+                            display: none;
+                        }
+                        }
+                    }
+
+                    button {
+                       width: 175px;
+                       height: 50px;
+                       color: #fff;
+                       border: none;
+                       margin-top: 25px;
+                    }
+                    small {
+                        color: red;
+                        position: absolute;
+                        bottom: -20px;
+                    }
+            }
+        }
+        // End contact_page
+}  
+
+/* *******MOBILE LARGE SCREEN SIZE******** */
+
+@media screen and (max-width: 767px) {
+    .clickUp {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    header {
+        padding: 25px 0 !important;
+
+        .menu_item {
+            padding: 0 20px;
+        }
+        .logo_header {
+            img {
+                width: 35px;
+            }
+            span {
+                font-size: 25px;
+            }
+        }
+
+        .lang {
+            display: none !important;
+        }
+    }
+    .desktop_header {
+        display: none;
+    }
+
+    // Start home_page
+    .home_page {
+        .professional {
+            height: 100vh !important;
+            margin-top: 50px !important;
+            .prof_info_text {
+                text-align: center;
+    
+                h5 {
+                    // margin-bottom: 20px;
+                    font-size: 22px;
+                }
+    
+                h1 {
+                    font-size: 30px !important;
+                    margin: 25px 0;
+                }
+    
+                p {
+                    font-size: 20px !important;
+                }
+                button {
+                    margin-top: 40px !important;
+                }
+            }
+            .photo {
+                img {
+                    display: none;
+                }
+                .purple_circle {
+                    width: 340px !important;
+                    height: 340px !important;
+                    left: 200px !important;
+                    top: -400px !important;
+                    opacity: .7;
+                }
+            }
+        }
+    
+        .contact_as {
+            .contact_as_list {
+                flex-direction: column;
+                text-align: center;
+                padding-left: 25px;
+    
+                span {
+                    font-size: 24px !important;
+                    padding: 0 !important;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+        .service {
+            .service_list {
+                height: 150px !important;
+                margin-bottom: 25px;
+    
+                img {
+                    width: 60px;
+                }
+    
+                h2 {
+                    font-size: 18px !important;
+                }
+            }
+        }
+          
+        .right_choice {
+            margin-top: 50px;
+            .right {
+                padding-left: 15px !important;
+                h2 {
+                    text-align: center;
+                }
+                p,
+                strong {
+                    font-size: 18px !important;
+                };
+            }
+            .left {
+                overflow-x: hidden;
+                .circle {
+                    display: none;
+                }
+                .photo {
+                    width: 110%;
+                }
+            }
+        }
+    
+        .recommended {
+            padding: 0 !important;
+            h2 {
+                font-size: 25px !important;
+            }
+    
+            .recommended_list {
+                height: 250px !important;
+    
+                .close_recommended_list {
+                    margin-left: 70% !important;
+                }
+            }
+    
+            p,
+            span,
+            h6 {
+                font-size: 18px !important;
+            };
+        }
+    
+        .our_specialists {
+    
+            .specialist_list {
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 25px !important;
+            }
+            h6{
+                font-size: 22px !important;
+                margin-top: 20px;
+            }
+            i {
+               font-size: 20px; 
+            }
+    
+        }
+    
+        .our_clients {
+          
+            h2 {
+                font-size: 25px !important;
+            }  
+    
+            .slider_list {
+                .comment_box {
+                    width: 100% !important;
+                }
+            }
+    
+            .slick-dots {
+                width: 95% !important;
+                margin: 0 auto;
+            }
+        }
+    }
+    // End home_page
+
+        // start abousUs_pafge
+        .aboutUs_page {
+            .about_us,
+            .for_customers {
+                height: auto;
+                margin-top: 40px;
+                padding: 20px 0;
+                background-color: #fff;
+                    .right {
+                        margin-bottom: 25px;
+                        h2 {
+                            text-align: center;
+                            margin-bottom: 30px;
+                        }
+                        .mobile_scroll {
+                            max-height: 250px;
+                            overflow-y: scroll;
+                        }
+                    }
+    
+                    .left {
+                        // position: none;
+                        img {
+                            position: relative;
+                            width: 100% !important;
+                            height: 100%;
+                            top: 0 !important;
+                            left: 0;
+                        }
+                    }
+            }
+            .for_customers {
+                margin-top: 50px;
+            }
+
+            
+        .certificate {  
+            margin-top: 50px;
+            h2 {
+                font-size: 25px;
+            }
+            img {
+                margin-bottom: 20px !important;
+                width: 100%;
+            }
+        }
+
+        .modal_certificate {
+
+            .modal_item {
+                width: 100%;
+            }
+            .close_modal {
+                top: 20%;
+                left: 90%;
+            }
+        }
+
+
+        
+        .cheerful_team {
+            margin-top: 50px;
+            h2 {
+                font-size: 25px;
+            }
+            .fade_list {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+            
+    .slick-next {
+        right: 2%;
+        top: 270px;
+    }
+    .slick-prev {
+        left: 0;
+        top: 270px;
+    }
+        }
+
+        }
+        // End abousUs_page
+
+        // Start doctors_page
+        .doctors_page {
+            .our_doctors {
+
+                h2 {
+                    text-align: center;
+                    margin-top: 25px;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+        // End doctor page
+
+        .blog_page {
+            .hat_blog {
+                .blog_photo {
+                    img {
+                        height: 300px;
+                    }
+                }
+                h5 {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        
+        // Start contact_page
+        .contact_page {
+            form {
+                width: 100% !important;
+                margin: 0 auto;
+                text-align: center;
+
+                .user_photo {
+                    label {
+                            font-size: 14px;                    
+                            margin-bottom: 5px;
+                    }
+                    small {
+                        bottom: -30px !important;
+                    }
+                }
+                .add_photo {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin-bottom: -10px !important;
+
+                    img,
+                    input {
+                        width: 94px;
+                        height: 94px;
+                        border-radius: 50%;
+                        position: absolute;
+                        border-radius: 50%;
+                    }
+                    .fa-user {
+                        font-size: 50px;
+                    }
+                    .fa-check-circle,
+                    .fa-exclamation-circle {
+                        position: absolute;
+                        right: -40px;
+                        font-size: 25px;
+                        display: none;
+                    }
+                }
+
+                .user_name,
+                .subject_title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    label {
+                        font-size: 14px;
+                        width: 100% !important;
+
+                        input {
+                            width: 100% !important;
+                            height: 50px;
+                            border: none;
+                            outline: none;
+                            background-color: #f6f6f6;
+                            border-radius: 5px;
+                            padding: 0 10px;
+                            font-size: 16px;
+                            border: 2px solid #f6f6f6;
+                        }
+                        #userName,
+                        #subject {
+                            text-transform: capitalize;
+                        }
+                        .fa-check-circle,
+                        .fa-exclamation-circle {
+                            position: absolute;
+                            right: 5px;
+                            top: 32px;
+                            font-size: 25px;
+                            display: none;
+                        }
+                        .fa-exclamation-circle {
+                            color: red;
+                        }
+                    }
+
+                    .user_email {
+                        margin-top: 25px;
+                    }
+                }
+                    #subject {
+                        width: 100% !important;
+                    }
+                    .user_name {
+                        margin: 25px 0;
+                    }
+
+                    .user_message {
+                        margin-top: 25px;
+                        label {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            font-size: 14px;
+                            position: relative;
+                            
+                            textarea {
+                                width: 100% !important;
+                                height: 120px;
+                                background-color: #f6f6f6;
+                                border: 2px solid #f6f6f6;
+                                outline: none;
+                                border: 2px solid #f6f6f6;
+                                border-radius: 5px;
+                                resize: none;
+                                padding: 10px;
+                            }
+                            
+                        .fa-check-circle,
+                        .fa-exclamation-circle {
+                            position: absolute;
+                            right: 5px;
+                            top: 32px;
+                            font-size: 25px;
+                            display: none;
+                        }
+                        }
+                    }
+
+                    button {
+                       width: 175px;
+                       height: 50px;
+                       color: #fff;
+                       border: none;
+                       margin-top: 25px;
+                    }
+                    small {
+                        color: red;
+                        position: absolute;
+                        bottom: -20px;
+                    }
+            }
+        }
+        // End contact_page
+
+    footer {
+        padding: 25px 0;
+        .logo_footer {
+            margin-bottom: 50px;
+            span {
+                font-size: 25px;
+            }
+            img {
+                width: 40px;
+            }
+        }
+
+        .workDay,
+        .address,
+        .contact,
+        .about_as,
+        .stay_contend {
+            span,
+            a,
+            p {
+                font-size: 16px !important;
+                margin-left: 0;
+                text-align: justify;
+            }
+            strong {
+                font-size: 20px;
+                font-weight: 600;
+            } 
+        }
+        big {
+            width: 100%;
+            margin-top: 25px;
+            font-size: 20px !important;
+            margin-bottom: 10px;
+        }
+       
+    }
+}  
+
+@media screen and (min-width: 376px) and (max-width: 766px) {
+    
+    // Start home_page
+    .professional {
+        height: 100vh !important;
+        margin-top: 20px !important;
+        .prof_info_text {
+            text-align: center;
+
+            h5 {
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+
+            h1 {
+                font-size: 40px !important;
+                margin: 25px 0;
+            }
+
+            p {
+                font-size: 20px !important;
+            }
+            button {
+                margin-top: 100px !important;
+            }
+        }
+        .photo {
+            img {
+                display: none;
+            }
+            .purple_circle {
+                width: 340px !important;
+                height: 340px !important;
+                left: 200px !important;
+                top: -400px !important;
+                opacity: .7;
+            }
+        }
+    }
+    // End home_page
+    
+}

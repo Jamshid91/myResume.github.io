@@ -1,0 +1,705 @@
+/* *******DESKTOP LARGE SCREEN SIZE******** */
+@media screen and (min-width: 993px) {
+  .desktop_header {
+    width: 100%;
+  }
+  .mobile_header {
+    display: none;
+  }
+}
+
+/* *******TABLET LARGE SCREEN SIZE******** */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .clickUp {
+    right: 20px !important;
+  }
+  .desktop_header {
+    display: none;
+  }
+  .mobile_header {
+    width: 95%;
+  }
+  .home_page .right_choice {
+    margin-top: 100px;
+  }
+  .home_page .right_choice .right h2 {
+    font-size: 24px !important;
+  }
+  .home_page .right_choice .circle {
+    top: -100px !important;
+  }
+  .home_page .right_choice .photo {
+    width: 120%;
+  }
+  .home_page .recommended {
+    margin-top: 100px;
+  }
+  .home_page .recommended .recommended_list {
+    height: 250px !important;
+  }
+  .home_page .our_specialists {
+    margin-top: 100px !important;
+  }
+  .home_page .our_specialists .specialist_list {
+    margin-bottom: 25px;
+  }
+  .home_page .our_clients .slider_list .comment_box {
+    width: 300px !important;
+  }
+  .home_page .our_clients .btn_left,
+  .home_page .our_clients .btn_right {
+    top: 60% !important;
+  }
+  .aboutUs_page mobile_scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  .aboutUs_page mobile_scroll::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 2px;
+  }
+  .aboutUs_page .about_us,
+  .aboutUs_page .for_customers {
+    height: 370px;
+  }
+  .aboutUs_page .about_us .right .mobile_scroll,
+  .aboutUs_page .for_customers .right .mobile_scroll {
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+  .aboutUs_page .about_us .left img,
+  .aboutUs_page .for_customers .left img {
+    width: 400px;
+    top: -12%;
+  }
+  .aboutUs_page .certificate img {
+    margin-bottom: 20px !important;
+  }
+  .aboutUs_page .modal_certificate .close_modal {
+    top: 25%;
+    left: 97%;
+  }
+  .aboutUs_page .cheerful_team .fade_list {
+    width: 100%;
+  }
+  .aboutUs_page .cheerful_team .fade_list img {
+    width: 90%;
+  }
+  .aboutUs_page .cheerful_team .slick-next {
+    right: 2%;
+  }
+  .aboutUs_page .cheerful_team .slick-prev {
+    left: 0;
+  }
+  .contact_page form {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact_page form .user_photo label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .contact_page form .user_photo small {
+    bottom: -10px;
+  }
+  .contact_page form .add_photo {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .contact_page form .add_photo img,
+  .contact_page form .add_photo input {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .contact_page form .add_photo .fa-user {
+    font-size: 50px;
+  }
+  .contact_page form .add_photo .fa-check-circle,
+  .contact_page form .add_photo .fa-exclamation-circle {
+    position: absolute;
+    right: -40px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form .user_name,
+  .contact_page form .subject_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .contact_page form .user_name label,
+  .contact_page form .subject_title label {
+    font-size: 14px;
+  }
+  .contact_page form .user_name label input,
+  .contact_page form .subject_title label input {
+    width: 350px !important;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #f6f6f6;
+  }
+  .contact_page form .user_name label #userName,
+  .contact_page form .user_name label #subject,
+  .contact_page form .subject_title label #userName,
+  .contact_page form .subject_title label #subject {
+    text-transform: capitalize;
+  }
+  .contact_page form .user_name label .fa-check-circle,
+  .contact_page form .user_name label .fa-exclamation-circle,
+  .contact_page form .subject_title label .fa-check-circle,
+  .contact_page form .subject_title label .fa-exclamation-circle {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form .user_name label .fa-exclamation-circle,
+  .contact_page form .subject_title label .fa-exclamation-circle {
+    color: red;
+  }
+  .contact_page form #subject {
+    width: 740px !important;
+  }
+  .contact_page form .user_name {
+    margin: 25px 0;
+  }
+  .contact_page form .user_message {
+    margin-top: 25px;
+  }
+  .contact_page form .user_message label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 14px;
+    position: relative;
+  }
+  .contact_page form .user_message label textarea {
+    width: 740px !important;
+    height: 120px;
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6;
+    outline: none;
+    border: 2px solid #f6f6f6;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+  }
+  .contact_page form .user_message label .fa-check-circle,
+  .contact_page form .user_message label .fa-exclamation-circle {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form button {
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    margin-top: 25px;
+  }
+  .contact_page form small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+  }
+}
+
+/* *******MOBILE LARGE SCREEN SIZE******** */
+@media screen and (max-width: 767px) {
+  .clickUp {
+    right: 10px;
+    bottom: 10px;
+  }
+  header {
+    padding: 25px 0 !important;
+  }
+  header .menu_item {
+    padding: 0 20px;
+  }
+  header .logo_header img {
+    width: 35px;
+  }
+  header .logo_header span {
+    font-size: 25px;
+  }
+  header .lang {
+    display: none !important;
+  }
+  .desktop_header {
+    display: none;
+  }
+  .home_page .professional {
+    height: 100vh !important;
+    margin-top: 50px !important;
+  }
+  .home_page .professional .prof_info_text {
+    text-align: center;
+  }
+  .home_page .professional .prof_info_text h5 {
+    font-size: 22px;
+  }
+  .home_page .professional .prof_info_text h1 {
+    font-size: 30px !important;
+    margin: 25px 0;
+  }
+  .home_page .professional .prof_info_text p {
+    font-size: 20px !important;
+  }
+  .home_page .professional .prof_info_text button {
+    margin-top: 40px !important;
+  }
+  .home_page .professional .photo img {
+    display: none;
+  }
+  .home_page .professional .photo .purple_circle {
+    width: 340px !important;
+    height: 340px !important;
+    left: 200px !important;
+    top: -400px !important;
+    opacity: .7;
+  }
+  .home_page .contact_as .contact_as_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-left: 25px;
+  }
+  .home_page .contact_as .contact_as_list span {
+    font-size: 24px !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .home_page .service .service_list {
+    height: 150px !important;
+    margin-bottom: 25px;
+  }
+  .home_page .service .service_list img {
+    width: 60px;
+  }
+  .home_page .service .service_list h2 {
+    font-size: 18px !important;
+  }
+  .home_page .right_choice {
+    margin-top: 50px;
+  }
+  .home_page .right_choice .right {
+    padding-left: 15px !important;
+  }
+  .home_page .right_choice .right h2 {
+    text-align: center;
+  }
+  .home_page .right_choice .right p,
+  .home_page .right_choice .right strong {
+    font-size: 18px !important;
+  }
+  .home_page .right_choice .left {
+    overflow-x: hidden;
+  }
+  .home_page .right_choice .left .circle {
+    display: none;
+  }
+  .home_page .right_choice .left .photo {
+    width: 110%;
+  }
+  .home_page .recommended {
+    padding: 0 !important;
+  }
+  .home_page .recommended h2 {
+    font-size: 25px !important;
+  }
+  .home_page .recommended .recommended_list {
+    height: 250px !important;
+  }
+  .home_page .recommended .recommended_list .close_recommended_list {
+    margin-left: 70% !important;
+  }
+  .home_page .recommended p,
+  .home_page .recommended span,
+  .home_page .recommended h6 {
+    font-size: 18px !important;
+  }
+  .home_page .our_specialists .specialist_list {
+    margin-bottom: 20px;
+  }
+  .home_page .our_specialists h2 {
+    font-size: 25px !important;
+  }
+  .home_page .our_specialists h6 {
+    font-size: 22px !important;
+    margin-top: 20px;
+  }
+  .home_page .our_specialists i {
+    font-size: 20px;
+  }
+  .home_page .our_clients h2 {
+    font-size: 25px !important;
+  }
+  .home_page .our_clients .slider_list .comment_box {
+    width: 100% !important;
+  }
+  .home_page .our_clients .slick-dots {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  .aboutUs_page .about_us,
+  .aboutUs_page .for_customers {
+    height: auto;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #fff;
+  }
+  .aboutUs_page .about_us .right,
+  .aboutUs_page .for_customers .right {
+    margin-bottom: 25px;
+  }
+  .aboutUs_page .about_us .right h2,
+  .aboutUs_page .for_customers .right h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .aboutUs_page .about_us .right .mobile_scroll,
+  .aboutUs_page .for_customers .right .mobile_scroll {
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+  .aboutUs_page .about_us .left img,
+  .aboutUs_page .for_customers .left img {
+    position: relative;
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0;
+  }
+  .aboutUs_page .for_customers {
+    margin-top: 50px;
+  }
+  .aboutUs_page .certificate {
+    margin-top: 50px;
+  }
+  .aboutUs_page .certificate h2 {
+    font-size: 25px;
+  }
+  .aboutUs_page .certificate img {
+    margin-bottom: 20px !important;
+    width: 100%;
+  }
+  .aboutUs_page .modal_certificate .modal_item {
+    width: 100%;
+  }
+  .aboutUs_page .modal_certificate .close_modal {
+    top: 20%;
+    left: 90%;
+  }
+  .aboutUs_page .cheerful_team {
+    margin-top: 50px;
+  }
+  .aboutUs_page .cheerful_team h2 {
+    font-size: 25px;
+  }
+  .aboutUs_page .cheerful_team .fade_list {
+    width: 100%;
+  }
+  .aboutUs_page .cheerful_team .fade_list img {
+    width: 100%;
+    height: 250px;
+  }
+  .aboutUs_page .cheerful_team .slick-next {
+    right: 2%;
+    top: 270px;
+  }
+  .aboutUs_page .cheerful_team .slick-prev {
+    left: 0;
+    top: 270px;
+  }
+  .doctors_page .our_doctors h2 {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .doctors_page .our_doctors p {
+    text-align: justify;
+  }
+  .blog_page .hat_blog .blog_photo img {
+    height: 300px;
+  }
+  .blog_page .hat_blog h5 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .contact_page form {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact_page form .user_photo label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .contact_page form .user_photo small {
+    bottom: -30px !important;
+  }
+  .contact_page form .add_photo {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: -10px !important;
+  }
+  .contact_page form .add_photo img,
+  .contact_page form .add_photo input {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .contact_page form .add_photo .fa-user {
+    font-size: 50px;
+  }
+  .contact_page form .add_photo .fa-check-circle,
+  .contact_page form .add_photo .fa-exclamation-circle {
+    position: absolute;
+    right: -40px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form .user_name,
+  .contact_page form .subject_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact_page form .user_name label,
+  .contact_page form .subject_title label {
+    font-size: 14px;
+    width: 100% !important;
+  }
+  .contact_page form .user_name label input,
+  .contact_page form .subject_title label input {
+    width: 100% !important;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #f6f6f6;
+  }
+  .contact_page form .user_name label #userName,
+  .contact_page form .user_name label #subject,
+  .contact_page form .subject_title label #userName,
+  .contact_page form .subject_title label #subject {
+    text-transform: capitalize;
+  }
+  .contact_page form .user_name label .fa-check-circle,
+  .contact_page form .user_name label .fa-exclamation-circle,
+  .contact_page form .subject_title label .fa-check-circle,
+  .contact_page form .subject_title label .fa-exclamation-circle {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form .user_name label .fa-exclamation-circle,
+  .contact_page form .subject_title label .fa-exclamation-circle {
+    color: red;
+  }
+  .contact_page form .user_name .user_email,
+  .contact_page form .subject_title .user_email {
+    margin-top: 25px;
+  }
+  .contact_page form #subject {
+    width: 100% !important;
+  }
+  .contact_page form .user_name {
+    margin: 25px 0;
+  }
+  .contact_page form .user_message {
+    margin-top: 25px;
+  }
+  .contact_page form .user_message label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 14px;
+    position: relative;
+  }
+  .contact_page form .user_message label textarea {
+    width: 100% !important;
+    height: 120px;
+    background-color: #f6f6f6;
+    border: 2px solid #f6f6f6;
+    outline: none;
+    border: 2px solid #f6f6f6;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+  }
+  .contact_page form .user_message label .fa-check-circle,
+  .contact_page form .user_message label .fa-exclamation-circle {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    font-size: 25px;
+    display: none;
+  }
+  .contact_page form button {
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    margin-top: 25px;
+  }
+  .contact_page form small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+  }
+  footer {
+    padding: 25px 0;
+  }
+  footer .logo_footer {
+    margin-bottom: 50px;
+  }
+  footer .logo_footer span {
+    font-size: 25px;
+  }
+  footer .logo_footer img {
+    width: 40px;
+  }
+  footer .workDay span,
+  footer .workDay a,
+  footer .workDay p,
+  footer .address span,
+  footer .address a,
+  footer .address p,
+  footer .contact span,
+  footer .contact a,
+  footer .contact p,
+  footer .about_as span,
+  footer .about_as a,
+  footer .about_as p,
+  footer .stay_contend span,
+  footer .stay_contend a,
+  footer .stay_contend p {
+    font-size: 16px !important;
+    margin-left: 0;
+    text-align: justify;
+  }
+  footer .workDay strong,
+  footer .address strong,
+  footer .contact strong,
+  footer .about_as strong,
+  footer .stay_contend strong {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  footer big {
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 766px) {
+  .professional {
+    height: 100vh !important;
+    margin-top: 20px !important;
+  }
+  .professional .prof_info_text {
+    text-align: center;
+  }
+  .professional .prof_info_text h5 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .professional .prof_info_text h1 {
+    font-size: 40px !important;
+    margin: 25px 0;
+  }
+  .professional .prof_info_text p {
+    font-size: 20px !important;
+  }
+  .professional .prof_info_text button {
+    margin-top: 100px !important;
+  }
+  .professional .photo img {
+    display: none;
+  }
+  .professional .photo .purple_circle {
+    width: 340px !important;
+    height: 340px !important;
+    left: 200px !important;
+    top: -400px !important;
+    opacity: .7;
+  }
+}
+/*# sourceMappingURL=media.css.map */
