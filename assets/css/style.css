@@ -1161,10 +1161,13 @@ footer {
 }
 
 #progressBar {
-  width: 8.5px;
+  width: 10px;
 }
 .mobile_footer {
   display: block;
+}
+.css span big {
+  margin-left: 15px;
 }
 }
 
