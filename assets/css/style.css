@@ -751,14 +751,15 @@ li strong {
 .title_text span {
   font-size: 25px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .title_text big {
   font-size: 14px;
   color: #2e2e2e;
-  position: absolute;
-  top: 60%;
-  left: 20%;
-  transform: (-50%, -50%);
+  margin-top: -8px;
 }
 .count {
   color: #2e2e2e;
@@ -1165,9 +1166,6 @@ footer {
 }
 .mobile_footer {
   display: block;
-}
-.css span big {
-  left: 25%;
 }
 }
 
