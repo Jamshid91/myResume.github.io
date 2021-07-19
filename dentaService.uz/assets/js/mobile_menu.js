@@ -7,5 +7,5 @@ menuBurger.addEventListener('click', () => {
   menuBurger.classList.toggle('change');
   menuList.classList.toggle('menuSlider');
   logoHeader.classList.toggle('animLogoHeader');
-  console.dir(menuBurger.parentElement.children[3].classList.toggle('langMob'))
+  menuBurger.parentElement.children[3].classList.toggle('langMob')
 })

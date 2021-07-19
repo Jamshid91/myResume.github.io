@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.game {
+    width: 700px;
+    height: 250px;
+    border-bottom: 4px solid grey;
+    overflow: hidden;
+    position: relative;
+}
+
+.cactus {
+    position: relative;
+    width: 50px;
+    left: 650px;
+    top: 175px;
+}
+
+/* .cactus2 {
+    position: relative;
+    width: 65px;
+    height: 90px;
+    left: 1300px;
+    top: 155px;
+    object-fit: cover;
+} */
+
+.cactusAnim {
+    animation: cactusAnim 1.6s infinite linear;
+}
+
+.cactusAnimSpeed {
+    animation: cactusAnimSpeed .7s infinite linear;
+}
+
+/* .cactus2Anim {
+    animation: cactus2Anim 3.8s infinite linear;
+} */
+
+.dino {
+    position: relative;
+    left: 0;
+    top: 90px;
+    width: 80px;
+    height: 80px;
+    background-image: url('./img/dino1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}  
+
+.dinoAnim {
+    animation: anim .3s infinite;}
+
+.jump {
+    animation: jump .8s;
+}
+
+.game_over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+
+.gameOver {
+   display: block;
+}
+
+.game_over h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.game_over i {
+    font-size: 25px;
+    color: green;
+    cursor: pointer;
+}
+.time_game {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+.time_game span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@keyframes jump {
+    0% {
+        top: 90px;
+        background-image: url('./img/dino1.png');
+    }
+    30% {
+        top: 0px;
+        background-image: url('./img/dino2.png');
+    }
+    70% {
+        top: 0px;
+        background-image: url('./img/dino1.png');
+    }
+    100% {
+        top: 90px;
+        background-image: url('./img/dino2.png');
+    }
+}
+
+@keyframes anim {
+    from {
+        background-image: url('./img/dino1.png');
+    }
+    to {
+        background-image: url('./img/dino2.png');
+    }
+}
+
+@keyframes cactusAnim {
+    0% {
+        left: 650px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+@keyframes cactusAnimSpeed {
+    0% {
+        left: 650px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+@keyframes cactus2Anim {
+    0% {
+        left: 1300px;
+    }
+    100% {
+        left: -75px;
+    }
+}

@@ -396,6 +396,7 @@ nav {
   opacity: 0;
 }
 
+
 .change {
   display: block;
 }
@@ -1131,6 +1132,14 @@ footer {
   transform: translateY(-100px);
 }
 
+.myWork_info {
+  height: 250px !important;
+}
+
+.myWork_info a {
+  font-size: 18px;
+}
+
 
 .energo_info,
 .barkamol_info {
@@ -1166,6 +1175,8 @@ footer {
 }
 .mobile_footer {
   display: block;
+
+
 }
 }
 
