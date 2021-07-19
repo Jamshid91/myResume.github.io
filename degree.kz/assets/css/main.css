@@ -1661,6 +1661,13 @@ body footer .footer_text {
   }
   body .quation input {
     width: 100% !important;
+    margin-top: 15px;
+  }
+  body .quation textarea {
+    margin-top: 15px;
+  }
+  body .quation label .message_text {
+    margin-bottom: 20px;
   }
   body .map iframe {
     height: 400px;

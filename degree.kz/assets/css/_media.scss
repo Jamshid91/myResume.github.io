@@ -832,6 +832,14 @@
 
       input {
         width: 100% !important;
+        margin-top: 15px;
+      }
+
+      textarea {
+        margin-top: 15px;
+      }
+      label .message_text{
+        margin-bottom: 20px;
       }
 
     }
