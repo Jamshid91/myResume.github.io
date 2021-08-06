@@ -750,18 +750,40 @@ li strong {
   color: #f1c40f;
 }
 
-.fa-bootstrap {
+.fa-bootstrap,
+.fa-mdb,
+.fa-sass,
+.fa-less {
   position: absolute;
   font-size: 40px;
-  color: #3498db;
+  color: #8e44ad;
   top: 45px;
   right: 55px;
   z-index: 0;
   transform: rotate(45deg);
+  opacity: .8;
+}
+
+.fa-mdb {
+  top: 10px;
+  left: 25px;
+  transform: rotate(-35deg);
+  color: #e74c3c;
+}
+.fa-sass {
+  top: 95px;
+  color: #fd79a8;
+  transform: rotate(-25deg);
+  right: 35px;
+}
+.fa-less {
+  color: #273c75;
+  top: 135px;
+  left: 25px;
 }
 
 .title_text span {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -786,6 +808,16 @@ li strong {
 }
 .js span {
   color: #f1c40f;
+}
+
+.ps{
+  display: flex;
+}
+.ps > span{
+  color: #e74c3c;
+}
+.ps > .ps {
+  color: rgb(129,236,236);;
 }
 
 .html_list::before {
