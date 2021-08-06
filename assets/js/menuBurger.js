@@ -10,16 +10,16 @@ console.log(l1, l2, l3, l4, l5)
 
 mobileList.forEach(list => {
   list.addEventListener('click', () => {
-    list.classList.add('animate__bounceOutLeft')
-    setTimeout(() => {
+    // list.classList.add('animate__bounceOutLeft')
+    // setTimeout(() => {
       menuBurger.classList.remove('change');
     navMobile.classList.remove('change');
     navMobileBGC.classList.remove('change_bg');
-    }, 2000);
+    // }, 2000);
 
-    setTimeout(() => {
-      list.classList.remove('animate__bounceOutLeft')
-    }, 3000);
+    // setTimeout(() => {
+    //   list.classList.remove('animate__bounceOutLeft')
+    // }, 3000);
 
   })
 })
