@@ -1,3 +1,16 @@
+
+// DOMContentLoaded
+window.addEventListener('load', ()=> {
+
+  let loader = document.querySelector('.loading__resume');
+
+  // loader.classList.add('hideLoader')
+
+   setTimeout(() => {
+     loader.remove();
+  }, 7000);
+
+
 // scroll
 
 const progressBar = document.querySelector('#progressBar');
@@ -135,5 +148,7 @@ window.addEventListener('scroll', () => {
     myWorkInfo.classList.remove('activeMyInfo')
     // myWorkInfo.classList.remove('myWorkPosition')
   }
+
+})
 
 })

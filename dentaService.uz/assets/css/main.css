@@ -63,14 +63,17 @@ textarea::-webkit-scrollbar-thumb,
 mobile_scroll::-webkit-scrollbar-thumb,
 .addMoreText::-webkit-scrollbar-thumb {
   background-color: #0096FF;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 
 .logo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
@@ -105,6 +108,7 @@ header .nav_left a {
   text-decoration: none;
   color: #18191F;
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
@@ -134,19 +138,24 @@ header .web_contact a {
   width: 30px;
   height: 30px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fff;
   text-decoration: none;
   color: #0096FF;
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
@@ -180,12 +189,15 @@ header .lang .ru img {
 
 header .menu_item {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 50px;
@@ -200,18 +212,22 @@ header .menu_item .menu_burger_list {
   width: 40px;
   height: 4px;
   background-color: #0096FF;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 header .menu_item #burger_list1 {
   -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
           transform: translateY(-4px);
 }
 
 header .menu_item #burger_list3 {
   -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
           transform: translateY(4px);
 }
 
@@ -221,11 +237,13 @@ header .menu_item .change .menu_burger_list {
 
 header .menu_item .change #burger_list1 {
   -webkit-transform: translateY(4px) rotate(-45deg);
+      -ms-transform: translateY(4px) rotate(-45deg);
           transform: translateY(4px) rotate(-45deg);
 }
 
 header .menu_item .change #burger_list3 {
   -webkit-transform: translateY(-2px) rotate(45deg);
+      -ms-transform: translateY(-2px) rotate(45deg);
           transform: translateY(-2px) rotate(45deg);
 }
 
@@ -239,6 +257,7 @@ header .menu_item .change {
 
 header .menu_item .menu_list {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
@@ -248,6 +267,7 @@ header .menu_item .menu_list {
   height: 100%;
   background-color: #0096FF;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -288,12 +308,15 @@ header .menu_item .menu_list ul .lang_menu_list img {
 
 header .menu_item .menu_list .web_contact_mobile {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
@@ -311,6 +334,7 @@ header .menu_item .menuSlider {
 
 header .menu_item .logo_header {
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -321,12 +345,15 @@ header .menu_item .animLogoHeader {
 header .menu_item .lang {
   width: 80px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -376,12 +403,15 @@ footer {
 
 footer .logo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
@@ -423,10 +453,12 @@ footer .contact {
 
 footer .stay_contend {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -454,16 +486,19 @@ footer .stay_contend a:hover {
   bottom: 50px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #E5E9F2;
   box-shadow: 0px 0px 20px 0px rgba(0, 150, 255, 0.57);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 150, 255, 0.57);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 150, 255, 0.57);
   display: none;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
@@ -483,12 +518,15 @@ footer .stay_contend a:hover {
   height: 660px;
   overflow: hidden;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
@@ -496,12 +534,15 @@ footer .stay_contend a:hover {
 
 .home_page .professional .row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -527,7 +568,8 @@ footer .stay_contend a:hover {
 .home_page .professional .prof_info button {
   width: 250px;
   height: 45px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   background-color: #0096FF;
   color: #fff;
   border: none;
@@ -549,7 +591,8 @@ footer .stay_contend a:hover {
   left: 100px;
   top: -200px;
   background: #0096FF;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   z-index: -1;
 }
 
@@ -559,12 +602,15 @@ footer .stay_contend a:hover {
 
 .home_page .contact_as .contact_as_list {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 148px;
@@ -584,9 +630,11 @@ footer .stay_contend a:hover {
   font-weight: 700;
   color: #0096FF;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -594,15 +642,19 @@ footer .stay_contend a:hover {
 .home_page .contact_as i {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   color: #0096FF;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 28px;
@@ -619,19 +671,24 @@ footer .stay_contend a:hover {
   width: 100%;
   height: 180px;
   background-color: #0096FF;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   color: #fff;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
@@ -708,6 +765,7 @@ footer .stay_contend a:hover {
   max-height: 100px;
   overflow-y: hidden;
   -webkit-transition: .7s;
+  -o-transition: .7s;
   transition: .7s;
   text-align: justify;
   margin-right: 15px;
@@ -737,16 +795,20 @@ footer .stay_contend a:hover {
 
 .home_page .our_specialists .specialist_list {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -773,12 +835,15 @@ footer .stay_contend a:hover {
 .home_page .our_specialists .contacts {
   width: 100px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10px;
@@ -788,19 +853,24 @@ footer .stay_contend a:hover {
   width: 30px;
   height: 30px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fff;
   text-decoration: none;
   color: #0096FF;
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
@@ -818,28 +888,34 @@ footer .stay_contend a:hover {
 
 .home_page .our_clients .slider_list {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
 .home_page .our_clients .slider_list .comment_box {
   position: relative;
   width: 340px;
   height: 190px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   -webkit-box-shadow: 0px 24px 19px 0px rgba(0, 150, 255, 0.2);
   box-shadow: 0px 24px 19px 0px rgba(0, 150, 255, 0.2);
   padding: 10px;
@@ -852,9 +928,11 @@ footer .stay_contend a:hover {
 .home_page .our_clients .slider_list .comment_box::before {
   content: '';
   position: absolute;
+  left: -webkit-calc(100%/2.4);
   left: calc(100%/2.4);
   bottom: -50px;
   -webkit-transform: 50%, 50%;
+      -ms-transform: 50%, 50%;
           transform: 50%, 50%;
   border: 25px solid transparent;
   border-top: 25px solid #fff;
@@ -862,16 +940,20 @@ footer .stay_contend a:hover {
 
 .home_page .our_clients .slider_list .info_user {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -879,7 +961,8 @@ footer .stay_contend a:hover {
 .home_page .our_clients .slider_list .info_user .photo {
   width: 75px;
   height: 75px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: relative;
   top: 50px;
 }
@@ -887,7 +970,8 @@ footer .stay_contend a:hover {
 .home_page .our_clients .slider_list .info_user .photo img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -908,10 +992,12 @@ footer .stay_contend a:hover {
 .aboutUs_page .about_us .interesting_fact,
 .aboutUs_page .for_customers .interesting_fact {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
@@ -956,9 +1042,11 @@ footer .stay_contend a:hover {
 
 .doctors_page .our_doctors .row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -993,16 +1081,20 @@ footer .stay_contend a:hover {
 .doctors_page .doctors .specialist_list {
   margin-bottom: 85px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
@@ -1030,12 +1122,15 @@ footer .stay_contend a:hover {
 .doctors_page .doctors .specialist_list .contacts {
   width: 100px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10px;
@@ -1045,19 +1140,24 @@ footer .stay_contend a:hover {
   width: 30px;
   height: 30px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fff;
   text-decoration: none;
   color: #0096FF;
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
@@ -1072,12 +1172,15 @@ footer .stay_contend a:hover {
 .doctors_page .doctors .buttons {
   width: 100px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -1168,7 +1271,8 @@ footer .stay_contend a:hover {
   margin-left: auto;
   margin-right: 10px;
   padding: 5px 7px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .blog_page .hat_blog .blog_info .addMoreText,
@@ -1176,6 +1280,7 @@ footer .stay_contend a:hover {
   max-height: 255px;
   overflow-y: scroll;
   -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
@@ -1186,7 +1291,8 @@ footer .stay_contend a:hover {
   border: none;
   outline: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   margin-top: 25px;
 }
 
@@ -1205,9 +1311,11 @@ footer .stay_contend a:hover {
 
 .blog_page .blog_item .blog_btns {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
@@ -1233,6 +1341,7 @@ footer .stay_contend a:hover {
 
 .blog_page .blog_item .OpenBlogInfo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1275,16 +1384,20 @@ footer .stay_contend a:hover {
 
 .contact_page .get_touch form .user_photo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
@@ -1306,17 +1419,21 @@ footer .stay_contend a:hover {
 .contact_page .get_touch form .add_photo {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   border: 3px solid #0096FF;
   margin-bottom: 10px;
 }
@@ -1325,7 +1442,8 @@ footer .stay_contend a:hover {
 .contact_page .get_touch form .add_photo input {
   width: 94px;
   height: 94px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   border-radius: 50%;
 }
@@ -1366,12 +1484,15 @@ footer .stay_contend a:hover {
 .contact_page .get_touch form .user_name,
 .contact_page .get_touch form .subject_title {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
@@ -1380,13 +1501,16 @@ footer .stay_contend a:hover {
 .contact_page .get_touch form .user_name label,
 .contact_page .get_touch form .subject_title label {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: start;
       -ms-flex-align: start;
           align-items: start;
   font-family: 'Manrope-SemiBold';
@@ -1401,7 +1525,8 @@ footer .stay_contend a:hover {
   border: none;
   outline: none;
   background-color: #f6f6f6;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   padding: 0 10px;
   font-size: 16px;
   border: 2px solid #f6f6f6;
@@ -1450,13 +1575,16 @@ footer .stay_contend a:hover {
 
 .contact_page .get_touch form .user_message label {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: start;
       -ms-flex-align: start;
           align-items: start;
   font-family: 'Manrope-SemiBold';
@@ -1471,7 +1599,8 @@ footer .stay_contend a:hover {
   border: 2px solid #f6f6f6;
   outline: none;
   border: 2px solid #f6f6f6;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   resize: none;
   padding: 10px;
 }
@@ -1497,7 +1626,8 @@ footer .stay_contend a:hover {
 .contact_page .get_touch form button {
   width: 175px;
   height: 50px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   outline: none;
   background-color: #0096FF;
   color: #fff;
@@ -1534,9 +1664,11 @@ footer .stay_contend a:hover {
   z-index: 99999;
   display: none;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1568,6 +1700,7 @@ footer .stay_contend a:hover {
 .cheerful_team {
   margin-top: 100px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1582,12 +1715,15 @@ footer .stay_contend a:hover {
 .cheerful_team .fade_list {
   width: 50%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1730,15 +1866,19 @@ footer .stay_contend a:hover {
   width: 14px;
   height: 14px;
   border: 3px solid #0096FF;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   color: #fff !important;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   top: 2px;
@@ -1807,7 +1947,8 @@ footer .stay_contend a:hover {
   }
   .aboutUs_page mobile_scroll::-webkit-scrollbar-thumb {
     background-color: red;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
   }
   .aboutUs_page .about_us,
   .aboutUs_page .for_customers {
@@ -1857,24 +1998,29 @@ footer .stay_contend a:hover {
   .contact_page form .add_photo {
     position: relative;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 10px;
   }
   .contact_page form .add_photo img,
   .contact_page form .add_photo input {
     width: 94px;
     height: 94px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     position: absolute;
     border-radius: 50%;
   }
@@ -1891,12 +2037,15 @@ footer .stay_contend a:hover {
   .contact_page form .user_name,
   .contact_page form .subject_title {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
@@ -1912,7 +2061,8 @@ footer .stay_contend a:hover {
     border: none;
     outline: none;
     background-color: #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     padding: 0 10px;
     font-size: 16px;
     border: 2px solid #f6f6f6;
@@ -1948,13 +2098,16 @@ footer .stay_contend a:hover {
   }
   .contact_page form .user_message label {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
+    -webkit-align-items: start;
         -ms-flex-align: start;
             align-items: start;
     font-size: 14px;
@@ -1967,7 +2120,8 @@ footer .stay_contend a:hover {
     border: 2px solid #f6f6f6;
     outline: none;
     border: 2px solid #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     resize: none;
     padding: 10px;
   }
@@ -2050,6 +2204,7 @@ footer .stay_contend a:hover {
   .home_page .contact_as .contact_as_list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
@@ -2231,24 +2386,29 @@ footer .stay_contend a:hover {
   .contact_page form .add_photo {
     position: relative;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: -10px !important;
   }
   .contact_page form .add_photo img,
   .contact_page form .add_photo input {
     width: 94px;
     height: 94px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     position: absolute;
     border-radius: 50%;
   }
@@ -2265,16 +2425,20 @@ footer .stay_contend a:hover {
   .contact_page form .user_name,
   .contact_page form .subject_title {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
@@ -2291,7 +2455,8 @@ footer .stay_contend a:hover {
     border: none;
     outline: none;
     background-color: #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     padding: 0 10px;
     font-size: 16px;
     border: 2px solid #f6f6f6;
@@ -2331,13 +2496,16 @@ footer .stay_contend a:hover {
   }
   .contact_page form .user_message label {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
+    -webkit-align-items: start;
         -ms-flex-align: start;
             align-items: start;
     font-size: 14px;
@@ -2350,7 +2518,8 @@ footer .stay_contend a:hover {
     border: 2px solid #f6f6f6;
     outline: none;
     border: 2px solid #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     resize: none;
     padding: 10px;
   }
@@ -2454,4 +2623,3 @@ footer .stay_contend a:hover {
     opacity: .7;
   }
 }
-/*# sourceMappingURL=main.css.map */

@@ -55,7 +55,8 @@
   }
   .aboutUs_page mobile_scroll::-webkit-scrollbar-thumb {
     background-color: red;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
   }
   .aboutUs_page .about_us,
   .aboutUs_page .for_customers {
@@ -105,24 +106,29 @@
   .contact_page form .add_photo {
     position: relative;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 10px;
   }
   .contact_page form .add_photo img,
   .contact_page form .add_photo input {
     width: 94px;
     height: 94px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     position: absolute;
     border-radius: 50%;
   }
@@ -139,12 +145,15 @@
   .contact_page form .user_name,
   .contact_page form .subject_title {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
@@ -160,7 +169,8 @@
     border: none;
     outline: none;
     background-color: #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     padding: 0 10px;
     font-size: 16px;
     border: 2px solid #f6f6f6;
@@ -196,13 +206,16 @@
   }
   .contact_page form .user_message label {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
+    -webkit-align-items: start;
         -ms-flex-align: start;
             align-items: start;
     font-size: 14px;
@@ -215,7 +228,8 @@
     border: 2px solid #f6f6f6;
     outline: none;
     border: 2px solid #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     resize: none;
     padding: 10px;
   }
@@ -298,6 +312,7 @@
   .home_page .contact_as .contact_as_list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
@@ -479,24 +494,29 @@
   .contact_page form .add_photo {
     position: relative;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: -10px !important;
   }
   .contact_page form .add_photo img,
   .contact_page form .add_photo input {
     width: 94px;
     height: 94px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     position: absolute;
     border-radius: 50%;
   }
@@ -513,16 +533,20 @@
   .contact_page form .user_name,
   .contact_page form .subject_title {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
@@ -539,7 +563,8 @@
     border: none;
     outline: none;
     background-color: #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     padding: 0 10px;
     font-size: 16px;
     border: 2px solid #f6f6f6;
@@ -579,13 +604,16 @@
   }
   .contact_page form .user_message label {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
+    -webkit-align-items: start;
         -ms-flex-align: start;
             align-items: start;
     font-size: 14px;
@@ -598,7 +626,8 @@
     border: 2px solid #f6f6f6;
     outline: none;
     border: 2px solid #f6f6f6;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     resize: none;
     padding: 10px;
   }
@@ -702,4 +731,3 @@
     opacity: .7;
   }
 }
-/*# sourceMappingURL=media.css.map */
